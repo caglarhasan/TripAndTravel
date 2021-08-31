@@ -19,7 +19,8 @@ namespace TripAndTravel.Controllers
 
         public ActionResult BlogDetay(int id)
         {
-            return View();
+            var blogBul = c.Blogs.Where(x => x.ID == id).ToList();
+            return View(blogBul);
         }
     }
 }

@@ -3,28 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TripAndTravel.Models;
 
 namespace TripAndTravel.Controllers
 {
     public class HomeController : Controller
     {
+        // GET: Test
+        Context c = new Context();
         public ActionResult Index()
         {
-            return View();
+            var values = c.Blogs.ToList();
+            return View(values);
         }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+        
     }
 }
