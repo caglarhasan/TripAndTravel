@@ -130,7 +130,9 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -173,6 +175,10 @@
     <Content Include="webblog\js\move-top.js" />
     <Content Include="webblog\single.html" />
     <Content Include="webblog\w3layouts-License.txt" />
+    <Content Include="weblogin\css\style.css" />
+    <Content Include="weblogin\images\b4.jpg" />
+    <Content Include="weblogin\index.html" />
+    <Content Include="weblogin\w3layouts-License.txt" />
     <Content Include="web\about.html" />
     <Content Include="web\contact.html" />
     <Content Include="web\css\slider.css" />
@@ -240,6 +246,12 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\AddBlog.cshtml" />
     <Content Include="Views\Admin\GetBlog.cshtml" />
+    <Content Include="Views\Register\Login.cshtml" />
+    <Content Include="weblogin\fonts\Asap-Regular.ttf" />
+    <Content Include="weblogin\fonts\Audiowide-Regular.ttf" />
+    <Content Include="Views\Admin\Contact.cshtml" />
+    <Content Include="Views\Admin\About.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

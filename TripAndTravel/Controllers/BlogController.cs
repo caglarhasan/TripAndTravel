@@ -13,7 +13,7 @@ namespace TripAndTravel.Controllers
         Context c = new Context();
         public ActionResult Index()
         {
-            var bloglar = c.Blogs.ToList();
+            var bloglar = c.Blogs.OrderByDescending(x => x.ID).ToList();
             return View(bloglar);
         }
 

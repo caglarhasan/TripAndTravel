@@ -11,6 +11,7 @@ namespace TripAndTravel.Controllers
     {
         // GET: Admin
         Context c = new Context();
+        [Authorize]
         public ActionResult Index()
         {
             var values = c.Blogs.ToList();
@@ -57,12 +58,14 @@ namespace TripAndTravel.Controllers
 
         public ActionResult Contact()
         {
-            return View();
+            var contct = c.Contacts.ToList();
+            return View(contct);
         }
 
         public ActionResult About()
         {
-            return View();
+            var about = c.Abouts.ToList();
+            return View(about);
         }
     }
 }
