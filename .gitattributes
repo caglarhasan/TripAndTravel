@@ -1,4 +1,4 @@
-*.* linguist-language=Csharp
+*.cs linguist-language=Csharp
 *.java linguist-detectable=false
 *.js linguist-detectable=false
 
