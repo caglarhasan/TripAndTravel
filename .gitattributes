@@ -1,6 +1,6 @@
-*.csharp linguist-language=Csharp
+*.* linguist-language=Csharp
 *.java linguist-detectable=false
 *.js linguist-detectable=false
-*.htm linguist-vendored
+*.html linguist-vendored
 *.xml linguist-detectable=false
 *.css linguist-detectable=false
